@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C259D1751DD1EFD000228FED"
-               BuildableName = "swift-test.app"
-               BlueprintName = "swift-test"
-               ReferencedContainer = "container:swift-test.xcodeproj">
+               BlueprintIdentifier = "1BCBE1D04EFE9C90A7CFE3581FD53B6A"
+               BuildableName = "Pods_swift_test.framework"
+               BlueprintName = "Pods-swift-test"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C259D1751DD1EFD000228FED"
-            BuildableName = "swift-test.app"
-            BlueprintName = "swift-test"
-            ReferencedContainer = "container:swift-test.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C259D1751DD1EFD000228FED"
-            BuildableName = "swift-test.app"
-            BlueprintName = "swift-test"
-            ReferencedContainer = "container:swift-test.xcodeproj">
+            BlueprintIdentifier = "1BCBE1D04EFE9C90A7CFE3581FD53B6A"
+            BuildableName = "Pods_swift_test.framework"
+            BlueprintName = "Pods-swift-test"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C259D1751DD1EFD000228FED"
-            BuildableName = "swift-test.app"
-            BlueprintName = "swift-test"
-            ReferencedContainer = "container:swift-test.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

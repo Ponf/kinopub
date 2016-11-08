@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Dip (5.0.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Dip
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Dip: 6460091adcf84ae8765f4927b85b49e6a3b67bfe
+
+PODFILE CHECKSUM: 901c0366464e998ef8569e32f91f9ba907687d65
+
+COCOAPODS: 1.1.1
