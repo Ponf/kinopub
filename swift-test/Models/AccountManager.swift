@@ -12,6 +12,8 @@ protocol AccountManager: class {
     var requestFactory: RequestFactory { get }
     func addDelegate(delegate: AccountManagerDelegate)
     func createAccount(tokenData: TokenResponse)
+    func silentlyUpdateAccountWith(accessToken token: String, refreshToken: String)
+    func logoutAccount()
 }
 
 protocol AccountManagerDelegate {
@@ -43,10 +45,6 @@ class AccountManagerImp: AccountManager {
         requestFactory = RequestFactory()
         accountNetworkingService = AccountNetworkingService(requestFactory: requestFactory)
         checkIfAccountExist()
-        NotificationCenter.default.addObserver(self,
-                selector: #selector(notifyAboutDeviceIfRequired),
-                name: .UIApplicationDidBecomeActive,
-                object: nil)
     }
     
     func addDelegate(delegate: AccountManagerDelegate) {
@@ -58,32 +56,24 @@ class AccountManagerImp: AccountManager {
         Defaults[.refreshToken] = tokenData.refreshToken
         self.account = KinopubAccount(accessToken: tokenData.accessToken!, refreshToken: tokenData.refreshToken)
         self.loginAndNotifyDelegates()
-
+    }
+    
+    func silentlyUpdateAccountWith(accessToken token: String, refreshToken: String) {
+        Defaults[.accessToken] = token
+        Defaults[.refreshToken] = refreshToken
+        self.account = KinopubAccount(accessToken: token, refreshToken: refreshToken)
     }
 
-    @objc private func notifyAboutDeviceIfRequired() {
+    func logoutAccount() {
+        self.logoutAndNotifyDelegates()
+    }
+    
+    private func notifyAboutDeviceIfRequired() {
         if (account == nil) {
             return
         }
-        accountNetworkingService.notifyAboutDevice { [unowned self] error, tokenHasExpired in
-            if (error != nil) {
-                if (tokenHasExpired) {
-                    self.renewAccessTokenIfRequired()
-                }
-            }
-        }
-    }
+        accountNetworkingService.notifyAboutDevice {error in
 
-    private func renewAccessTokenIfRequired() {
-        if (account == nil) {
-            return
-        }
-        accountNetworkingService.renewAccessToken(with: account!.refreshToken!) { [unowned self] response, error in
-            if (!(error != nil)) {
-                self.createAccount(tokenData: response!)
-            } else {
-                self.logoutAndNotifyDelegates()
-            }
         }
     }
     
@@ -95,14 +85,15 @@ class AccountManagerImp: AccountManager {
     }
     
     private func loginAndNotifyDelegates() {
-        requestFactory.account = self.account
-        self.notifyAboutDeviceIfRequired()
+        requestFactory.accountManager = self
         delegatesStorage .enumerateDelegatesWithBlock(delegateBlock: { [unowned self] (delegate) in
             (delegate as! AccountManagerDelegate).accountManager(accountManager: self, didLoginToAccount: self.account!)
         })
+        self.notifyAboutDeviceIfRequired()
     }
 
     private func logoutAndNotifyDelegates() {
+        //TODO: send request to remove device
         Defaults[.accessToken] = nil
         Defaults[.refreshToken] = nil
         account = nil

@@ -16,6 +16,7 @@
 		B408A3F85B69928EB3C45174 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A7F59BFA0CBBCDBEB1FA /* LoginModel.swift */; };
 		B408A622F553D14D8B45B42A /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AD22F761F46335E55815 /* SplitViewController.swift */; };
 		B408A8E503BC75AE02F70040 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A2F6988495D2D640F031 /* TokenResponse.swift */; };
+		B408A9D8509FD65323AAFBAB /* OAuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AB84E05C6F7D8C53F89E /* OAuthHandler.swift */; };
 		B408AA1CFAAF606E9CEFB3C7 /* DelegatesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A4626B73E1211D5FA5D0 /* DelegatesStorage.swift */; };
 		B408AB3065B0753FAACF07F9 /* AccountNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AD7C786152DBC6980534 /* AccountNetworkingService.swift */; };
 		B408AC8F8D9DFE737204CE5D /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A5A00BBE78E180474B06 /* RequestFactory.swift */; };
@@ -39,6 +40,7 @@
 		B408A5A00BBE78E180474B06 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		B408A7F59BFA0CBBCDBEB1FA /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		B408A874277B969C324A7CE8 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		B408AB84E05C6F7D8C53F89E /* OAuthHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthHandler.swift; sourceTree = "<group>"; };
 		B408AD22F761F46335E55815 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		B408AD7C786152DBC6980534 /* AccountNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNetworkingService.swift; sourceTree = "<group>"; };
 		B408AE49E6721A79F05411DC /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				B408A0B38C3308C4A6E12065 /* ModelsAssembly.swift */,
 				B408A515949209B77A35F98D /* Defaults.swift */,
 				B408A5A00BBE78E180474B06 /* RequestFactory.swift */,
+				B408AB84E05C6F7D8C53F89E /* OAuthHandler.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				B408AC8F8D9DFE737204CE5D /* RequestFactory.swift in Sources */,
 				B408A8E503BC75AE02F70040 /* TokenResponse.swift in Sources */,
 				B408AB3065B0753FAACF07F9 /* AccountNetworkingService.swift in Sources */,
+				B408A9D8509FD65323AAFBAB /* OAuthHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

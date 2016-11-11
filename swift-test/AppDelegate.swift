@@ -20,9 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         NetworkActivityLogger.shared.level = .debug
         NetworkActivityLogger.shared.startLogging()
-        
-        Defaults[.accessToken] = "dasdasdasd"
-        // Override point for customization after application launch.
+    
         return true
     }
 

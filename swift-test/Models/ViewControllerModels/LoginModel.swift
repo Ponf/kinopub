@@ -26,11 +26,12 @@ class LoginModel {
 
     func loadDeviceCode(completed:@escaping ((AuthResponse) -> ())) {
         loginNetworkingService.receiveDeviceCode {
-            [unowned self] (response, error) in
+            [weak self] (response, error) in
+            guard let strongSelf = self else { return }
             if let authData = response {
-                self.code = authData.code
+                strongSelf.code = authData.code
                 completed(authData)
-                self.startTimer(withInterval: authData.refreshInterval)
+                strongSelf.startTimer(withInterval: authData.refreshInterval)
             } else {
                 //TODO: handle error
             }
@@ -58,11 +59,11 @@ class LoginModel {
     
     //TODO: remove objc??
     @objc func checkCodeValidation() {
-        loginNetworkingService.checkApproved(withCode: code!) { [unowned self] (response, error) in
+        loginNetworkingService.checkApproved(withCode: code!) { [weak self] (response, error) in
+            guard let strongSelf = self else { return }
             if let tokenData = response {
-                self.timer?.invalidate()
-                
-                self.accountManager.createAccount(tokenData: tokenData)
+                strongSelf.invalidateTimer()
+                strongSelf.accountManager.createAccount(tokenData: tokenData)
             }
         }
     }

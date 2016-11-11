@@ -36,7 +36,7 @@ class SplitViewController: UISplitViewController {
         super.viewDidAppear(animated)
 
         if !accountManager.hasAccount {
-            self.performSegue(withIdentifier: "kShowLoginRequiredSegue", sender: self)
+            showLoginViewController()
         } else {
             delay(1.0) {
                 self.hideMenuAnimated()
@@ -48,6 +48,10 @@ class SplitViewController: UISplitViewController {
         UIView.animate(withDuration: 0.3) {
             self.preferredDisplayMode = UISplitViewControllerDisplayMode.primaryHidden
         }
+    }
+    
+    fileprivate func showLoginViewController() {
+                    self.performSegue(withIdentifier: "kShowLoginRequiredSegue", sender: self)
     }
 }
 
@@ -67,7 +71,8 @@ extension SplitViewController: LeftMenuViewControllerDelegate {
 }
 
 extension SplitViewController: AccountManagerDelegate {
-    func accountManager(accountManager: AccountManager, didLoginToAccount account: KinopubAccount) {
-        
+    
+    func accountManagerDidLogout(accountManager: AccountManager) {
+        showLoginViewController()
     }
 }

@@ -24,7 +24,7 @@ class DelegatesStorage {
     }
 
     func enumerateDelegatesWithBlock(delegateBlock: (_ delegate: AnyObject) -> ()) {
-        for delegate in delegates.objectEnumerator() {
+        for delegate in (delegates.copy() as AnyObject).objectEnumerator() {
             delegateBlock(delegate as AnyObject)
         }
     }

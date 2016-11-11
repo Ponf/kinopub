@@ -14,28 +14,28 @@ class AccountNetworkingService {
         self.requestFactory = requestFactory
     }
 
-    func notifyAboutDevice(completed: @escaping (_ error: Error?, _ tokenHasExpired: Bool) -> ()) {
+    func notifyAboutDevice(completed: @escaping (_ error: Error?) -> ()) {
         //TODO: check that requestFactory has account
         requestFactory.notifyAboutDeviceRequest().validate().responseJSON() { response in
                     switch response.result {
                     case .success:
-                        completed(nil, false)
+                        completed(nil)
                     case .failure(let error):
-                        completed(error, response.response?.statusCode == 401)
+                        completed(error)
                 }
         }
     }
-
-    func renewAccessToken(with refreshToken: String, completed: @escaping (_ responseObject: TokenResponse?, _ error: Error?) -> ()) {
-        requestFactory.renewAccessTokenRequest(with: refreshToken).validate()
-                .responseObject { (response: DataResponse<TokenResponse>) in
-                    switch response.result {
-                    case .success:
-                        completed(response.result.value, nil)
-                        break
-                    default:
-                        break
-                    }
-                }
-    }
+//
+//    func renewAccessToken(with refreshToken: String, completed: @escaping (_ responseObject: TokenResponse?, _ error: Error?) -> ()) {
+//        requestFactory.renewAccessTokenRequest(with: refreshToken).validate()
+//                .responseObject { (response: DataResponse<TokenResponse>) in
+//                    switch response.result {
+//                    case .success:
+//                        completed(response.result.value, nil)
+//                        break
+//                    default:
+//                        break
+//                    }
+//                }
+//    }
 }
