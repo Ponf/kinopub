@@ -1,15 +1,29 @@
 PODS:
   - Alamofire (4.0.1)
+  - AlamofireNetworkActivityLogger (2.0.0):
+    - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
   - Dip (5.0.4)
+  - ObjectMapper (2.2.1)
+  - SwiftyUserDefaults (3.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - AlamofireNetworkActivityLogger
+  - AlamofireObjectMapper
   - Dip
+  - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireNetworkActivityLogger: 4639c88813101ee2be40f9a03b427e50296bb738
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
   Dip: 6460091adcf84ae8765f4927b85b49e6a3b67bfe
+  ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
+  SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
 
-PODFILE CHECKSUM: 901c0366464e998ef8569e32f91f9ba907687d65
+PODFILE CHECKSUM: d836e5c0980ec06fa82d59d4c3326644ba327402
 
 COCOAPODS: 1.1.1

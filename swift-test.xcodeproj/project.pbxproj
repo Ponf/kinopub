@@ -8,16 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		00D5E853CDE83578BDB88D65 /* Pods_swift_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F113AC2F89ADF04D4D6AD7B9 /* Pods_swift_test.framework */; };
+		B408A0E8EE42591CE1F96916 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A874277B969C324A7CE8 /* AuthResponse.swift */; };
+		B408A14C0D85CA8F32BC1DB8 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A2F858D098C1E5D61F9E /* LeftMenuViewController.swift */; };
+		B408A2E4CD0AEA21E7D75352 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A515949209B77A35F98D /* Defaults.swift */; };
+		B408A2F2C2330387B7F072A0 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AE49E6721A79F05411DC /* AccountManager.swift */; };
+		B408A3479DEF113BD0F5781E /* KinopubAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A1C22C57202D80DB6499 /* KinopubAccount.swift */; };
+		B408A3F85B69928EB3C45174 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A7F59BFA0CBBCDBEB1FA /* LoginModel.swift */; };
+		B408A622F553D14D8B45B42A /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AD22F761F46335E55815 /* SplitViewController.swift */; };
+		B408A8E503BC75AE02F70040 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A2F6988495D2D640F031 /* TokenResponse.swift */; };
+		B408AA1CFAAF606E9CEFB3C7 /* DelegatesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A4626B73E1211D5FA5D0 /* DelegatesStorage.swift */; };
+		B408AB3065B0753FAACF07F9 /* AccountNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AD7C786152DBC6980534 /* AccountNetworkingService.swift */; };
+		B408AC8F8D9DFE737204CE5D /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A5A00BBE78E180474B06 /* RequestFactory.swift */; };
+		B408ACE03734986B9C657620 /* LoginNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A39B082B70CF5708D926 /* LoginNetworkingService.swift */; };
+		B408AD15176079EBD139B2B0 /* ModelsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A0B38C3308C4A6E12065 /* ModelsAssembly.swift */; };
+		B408AED11A54FEC50FD72FBB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A487008E330C4210EE24 /* LoginViewController.swift */; };
 		C259D17A1DD1EFD000228FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C259D1791DD1EFD000228FED /* AppDelegate.swift */; };
-		C259D17C1DD1EFD000228FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C259D17B1DD1EFD000228FED /* ViewController.swift */; };
 		C259D17F1DD1EFD000228FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C259D17D1DD1EFD000228FED /* Main.storyboard */; };
 		C259D1811DD1EFD000228FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C259D1801DD1EFD000228FED /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B408A0B38C3308C4A6E12065 /* ModelsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsAssembly.swift; sourceTree = "<group>"; };
+		B408A1C22C57202D80DB6499 /* KinopubAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinopubAccount.swift; sourceTree = "<group>"; };
+		B408A2F6988495D2D640F031 /* TokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		B408A2F858D098C1E5D61F9E /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		B408A39B082B70CF5708D926 /* LoginNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworkingService.swift; sourceTree = "<group>"; };
+		B408A4626B73E1211D5FA5D0 /* DelegatesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegatesStorage.swift; sourceTree = "<group>"; };
+		B408A487008E330C4210EE24 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B408A515949209B77A35F98D /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		B408A5A00BBE78E180474B06 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		B408A7F59BFA0CBBCDBEB1FA /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		B408A874277B969C324A7CE8 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		B408AD22F761F46335E55815 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		B408AD7C786152DBC6980534 /* AccountNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNetworkingService.swift; sourceTree = "<group>"; };
+		B408AE49E6721A79F05411DC /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		C259D1761DD1EFD000228FED /* swift-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C259D1791DD1EFD000228FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C259D17B1DD1EFD000228FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C259D17E1DD1EFD000228FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C259D1801DD1EFD000228FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C259D1821DD1EFD000228FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +81,78 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B408A0373011E63045CC964A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B408AD22F761F46335E55815 /* SplitViewController.swift */,
+				B408A2F858D098C1E5D61F9E /* LeftMenuViewController.swift */,
+				B408A487008E330C4210EE24 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B408A509DF89049DD971FD76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B408ACB34134CE3D50FD63A4 /* NetworkingServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B408A88344234884A39349B9 /* ViewControllerModels */ = {
+			isa = PBXGroup;
+			children = (
+				B408A7F59BFA0CBBCDBEB1FA /* LoginModel.swift */,
+			);
+			path = ViewControllerModels;
+			sourceTree = "<group>";
+		};
+		B408A9ACBA5E62E2CF5116F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B408AE49E6721A79F05411DC /* AccountManager.swift */,
+				B408A1C22C57202D80DB6499 /* KinopubAccount.swift */,
+				B408A88344234884A39349B9 /* ViewControllerModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B408ABCF6FE3A2EDA9E33FD2 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				B408A874277B969C324A7CE8 /* AuthResponse.swift */,
+				B408A2F6988495D2D640F031 /* TokenResponse.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		B408ACB34134CE3D50FD63A4 /* NetworkingServices */ = {
+			isa = PBXGroup;
+			children = (
+				B408A39B082B70CF5708D926 /* LoginNetworkingService.swift */,
+				B408AD7C786152DBC6980534 /* AccountNetworkingService.swift */,
+			);
+			path = NetworkingServices;
+			sourceTree = "<group>";
+		};
+		B408ACFB63C66F678D07EF00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B408AF02C84843FF8B3C61AA /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B408A4626B73E1211D5FA5D0 /* DelegatesStorage.swift */,
+				B408A0B38C3308C4A6E12065 /* ModelsAssembly.swift */,
+				B408A515949209B77A35F98D /* Defaults.swift */,
+				B408A5A00BBE78E180474B06 /* RequestFactory.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
 		C259D16D1DD1EFD000228FED = {
 			isa = PBXGroup;
 			children = (
@@ -77,10 +175,15 @@
 			isa = PBXGroup;
 			children = (
 				C259D1791DD1EFD000228FED /* AppDelegate.swift */,
-				C259D17B1DD1EFD000228FED /* ViewController.swift */,
 				C259D17D1DD1EFD000228FED /* Main.storyboard */,
 				C259D1801DD1EFD000228FED /* Assets.xcassets */,
 				C259D1821DD1EFD000228FED /* Info.plist */,
+				B408A0373011E63045CC964A /* ViewControllers */,
+				B408A9ACBA5E62E2CF5116F1 /* Models */,
+				B408ACFB63C66F678D07EF00 /* Views */,
+				B408A509DF89049DD971FD76 /* Services */,
+				B408AF02C84843FF8B3C61AA /* Infrastructure */,
+				B408ABCF6FE3A2EDA9E33FD2 /* DTOs */,
 			);
 			path = "swift-test";
 			sourceTree = "<group>";
@@ -207,8 +310,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C259D17C1DD1EFD000228FED /* ViewController.swift in Sources */,
 				C259D17A1DD1EFD000228FED /* AppDelegate.swift in Sources */,
+				B408A622F553D14D8B45B42A /* SplitViewController.swift in Sources */,
+				B408A14C0D85CA8F32BC1DB8 /* LeftMenuViewController.swift in Sources */,
+				B408A2F2C2330387B7F072A0 /* AccountManager.swift in Sources */,
+				B408AED11A54FEC50FD72FBB /* LoginViewController.swift in Sources */,
+				B408AA1CFAAF606E9CEFB3C7 /* DelegatesStorage.swift in Sources */,
+				B408A3479DEF113BD0F5781E /* KinopubAccount.swift in Sources */,
+				B408AD15176079EBD139B2B0 /* ModelsAssembly.swift in Sources */,
+				B408A2E4CD0AEA21E7D75352 /* Defaults.swift in Sources */,
+				B408ACE03734986B9C657620 /* LoginNetworkingService.swift in Sources */,
+				B408A3F85B69928EB3C45174 /* LoginModel.swift in Sources */,
+				B408A0E8EE42591CE1F96916 /* AuthResponse.swift in Sources */,
+				B408AC8F8D9DFE737204CE5D /* RequestFactory.swift in Sources */,
+				B408A8E503BC75AE02F70040 /* TokenResponse.swift in Sources */,
+				B408AB3065B0753FAACF07F9 /* AccountNetworkingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +480,7 @@
 				C259D1871DD1EFD000228FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
