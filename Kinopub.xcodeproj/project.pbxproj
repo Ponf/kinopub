@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15A056E07DC533E5EB49A5E6 /* Pods_Kinopub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7C0164B63B05CD27BE96F5 /* Pods_Kinopub.framework */; };
+		C2D3BC1B1DD8739900026AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BBFF1DD8739900026AD9 /* AppDelegate.swift */; };
+		C2D3BC1C1DD8739900026AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D3BC001DD8739900026AD9 /* Assets.xcassets */; };
+		C2D3BC1D1DD8739900026AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D3BC011DD8739900026AD9 /* Main.storyboard */; };
+		C2D3BC1E1DD8739900026AD9 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC041DD8739900026AD9 /* AuthResponse.swift */; };
+		C2D3BC1F1DD8739900026AD9 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC051DD8739900026AD9 /* TokenResponse.swift */; };
+		C2D3BC201DD8739900026AD9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2D3BC061DD8739900026AD9 /* Info.plist */; };
+		C2D3BC211DD8739900026AD9 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC081DD8739900026AD9 /* Defaults.swift */; };
+		C2D3BC221DD8739900026AD9 /* DelegatesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC091DD8739900026AD9 /* DelegatesStorage.swift */; };
+		C2D3BC231DD8739900026AD9 /* ModelsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC0A1DD8739900026AD9 /* ModelsAssembly.swift */; };
+		C2D3BC241DD8739900026AD9 /* OAuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC0B1DD8739900026AD9 /* OAuthHandler.swift */; };
+		C2D3BC251DD8739900026AD9 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC0C1DD8739900026AD9 /* RequestFactory.swift */; };
+		C2D3BC261DD8739900026AD9 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC0E1DD8739900026AD9 /* AccountManager.swift */; };
+		C2D3BC271DD8739900026AD9 /* KinopubAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC0F1DD8739900026AD9 /* KinopubAccount.swift */; };
+		C2D3BC281DD8739900026AD9 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC111DD8739900026AD9 /* LoginModel.swift */; };
+		C2D3BC291DD8739900026AD9 /* AccountNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC141DD8739900026AD9 /* AccountNetworkingService.swift */; };
+		C2D3BC2A1DD8739900026AD9 /* LoginNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC151DD8739900026AD9 /* LoginNetworkingService.swift */; };
+		C2D3BC2B1DD8739900026AD9 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC171DD8739900026AD9 /* LeftMenuViewController.swift */; };
+		C2D3BC2C1DD8739900026AD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC181DD8739900026AD9 /* LoginViewController.swift */; };
+		C2D3BC2D1DD8739900026AD9 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC191DD8739900026AD9 /* SplitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22DAC9E0E08B1139F38A89AE /* Pods-Kinopub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinopub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kinopub/Pods-Kinopub.release.xcconfig"; sourceTree = "<group>"; };
+		C259D1761DD1EFD000228FED /* Kinopub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kinopub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D3BBFF1DD8739900026AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2D3BC001DD8739900026AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2D3BC021DD8739900026AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2D3BC041DD8739900026AD9 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		C2D3BC051DD8739900026AD9 /* TokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		C2D3BC061DD8739900026AD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D3BC081DD8739900026AD9 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		C2D3BC091DD8739900026AD9 /* DelegatesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegatesStorage.swift; sourceTree = "<group>"; };
+		C2D3BC0A1DD8739900026AD9 /* ModelsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsAssembly.swift; sourceTree = "<group>"; };
+		C2D3BC0B1DD8739900026AD9 /* OAuthHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthHandler.swift; sourceTree = "<group>"; };
+		C2D3BC0C1DD8739900026AD9 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		C2D3BC0E1DD8739900026AD9 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		C2D3BC0F1DD8739900026AD9 /* KinopubAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinopubAccount.swift; sourceTree = "<group>"; };
+		C2D3BC111DD8739900026AD9 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		C2D3BC141DD8739900026AD9 /* AccountNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountNetworkingService.swift; sourceTree = "<group>"; };
+		C2D3BC151DD8739900026AD9 /* LoginNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworkingService.swift; sourceTree = "<group>"; };
+		C2D3BC171DD8739900026AD9 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		C2D3BC181DD8739900026AD9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C2D3BC191DD8739900026AD9 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		CAA82EB034B96DAA7C0260FE /* Pods-Kinopub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinopub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kinopub/Pods-Kinopub.debug.xcconfig"; sourceTree = "<group>"; };
+		FD7C0164B63B05CD27BE96F5 /* Pods_Kinopub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kinopub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C259D1731DD1EFD000228FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A056E07DC533E5EB49A5E6 /* Pods_Kinopub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A97DFE59C50D47C4AEA7C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAA82EB034B96DAA7C0260FE /* Pods-Kinopub.debug.xcconfig */,
+				22DAC9E0E08B1139F38A89AE /* Pods-Kinopub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C259D16D1DD1EFD000228FED = {
+			isa = PBXGroup;
+			children = (
+				C2D3BBFE1DD8739900026AD9 /* src */,
+				C259D1771DD1EFD000228FED /* Products */,
+				14A97DFE59C50D47C4AEA7C7 /* Pods */,
+				F0294526C6377872532494B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C259D1771DD1EFD000228FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C259D1761DD1EFD000228FED /* Kinopub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D3BBFE1DD8739900026AD9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3BBFF1DD8739900026AD9 /* AppDelegate.swift */,
+				C2D3BC001DD8739900026AD9 /* Assets.xcassets */,
+				C2D3BC011DD8739900026AD9 /* Main.storyboard */,
+				C2D3BC031DD8739900026AD9 /* DTOs */,
+				C2D3BC061DD8739900026AD9 /* Info.plist */,
+				C2D3BC071DD8739900026AD9 /* Infrastructure */,
+				C2D3BC0D1DD8739900026AD9 /* Models */,
+				C2D3BC121DD8739900026AD9 /* Services */,
+				C2D3BC161DD8739900026AD9 /* ViewControllers */,
+				C2D3BC1A1DD8739900026AD9 /* Views */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C2D3BC031DD8739900026AD9 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3BC041DD8739900026AD9 /* AuthResponse.swift */,
+				C2D3BC051DD8739900026AD9 /* TokenResponse.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		C2D3BC071DD8739900026AD9 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3BC081DD8739900026AD9 /* Defaults.swift */,
+				C2D3BC091DD8739900026AD9 /* DelegatesStorage.swift */,
+				C2D3BC0A1DD8739900026AD9 /* ModelsAssembly.swift */,
+				C2D3BC0B1DD8739900026AD9 /* OAuthHandler.swift */,
+				C2D3BC0C1DD8739900026AD9 /* RequestFactory.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C2D3BC0D1DD8739900026AD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3BC0E1DD8739900026AD9 /* AccountManager.swift */,
+				C2D3BC0F1DD8739900026AD9 /* KinopubAccount.swift */,
+				C2D3BC101DD8739900026AD9 /* ViewControllerModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C2D3BC101DD8739900026AD9 /* ViewControllerModels */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3BC111DD8739900026AD9 /* LoginModel.swift */,
+			);
+			path = ViewControllerModels;
+			sourceTree = "<group>";
+		};
+		C2D3BC121DD8739900026AD9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3BC131DD8739900026AD9 /* NetworkingServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C2D3BC131DD8739900026AD9 /* NetworkingServices */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3BC141DD8739900026AD9 /* AccountNetworkingService.swift */,
+				C2D3BC151DD8739900026AD9 /* LoginNetworkingService.swift */,
+			);
+			path = NetworkingServices;
+			sourceTree = "<group>";
+		};
+		C2D3BC161DD8739900026AD9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2D3BC171DD8739900026AD9 /* LeftMenuViewController.swift */,
+				C2D3BC181DD8739900026AD9 /* LoginViewController.swift */,
+				C2D3BC191DD8739900026AD9 /* SplitViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C2D3BC1A1DD8739900026AD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0294526C6377872532494B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD7C0164B63B05CD27BE96F5 /* Pods_Kinopub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C259D1751DD1EFD000228FED /* Kinopub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C259D1851DD1EFD000228FED /* Build configuration list for PBXNativeTarget "Kinopub" */;
+			buildPhases = (
+				B9C6B832C94809E20CF47E27 /* [CP] Check Pods Manifest.lock */,
+				C259D1721DD1EFD000228FED /* Sources */,
+				C259D1731DD1EFD000228FED /* Frameworks */,
+				C259D1741DD1EFD000228FED /* Resources */,
+				AD5B6B89591D5AE6736446A9 /* [CP] Embed Pods Frameworks */,
+				43095809C32B3D311982A288 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kinopub;
+			productName = "swift-test";
+			productReference = C259D1761DD1EFD000228FED /* Kinopub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C259D16E1DD1EFD000228FED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = babystep.tv;
+				TargetAttributes = {
+					C259D1751DD1EFD000228FED = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C259D1711DD1EFD000228FED /* Build configuration list for PBXProject "Kinopub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C259D16D1DD1EFD000228FED;
+			productRefGroup = C259D1771DD1EFD000228FED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C259D1751DD1EFD000228FED /* Kinopub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C259D1741DD1EFD000228FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D3BC1C1DD8739900026AD9 /* Assets.xcassets in Resources */,
+				C2D3BC1D1DD8739900026AD9 /* Main.storyboard in Resources */,
+				C2D3BC201DD8739900026AD9 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43095809C32B3D311982A288 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kinopub/Pods-Kinopub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5B6B89591D5AE6736446A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kinopub/Pods-Kinopub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C6B832C94809E20CF47E27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C259D1721DD1EFD000228FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D3BC251DD8739900026AD9 /* RequestFactory.swift in Sources */,
+				C2D3BC2A1DD8739900026AD9 /* LoginNetworkingService.swift in Sources */,
+				C2D3BC221DD8739900026AD9 /* DelegatesStorage.swift in Sources */,
+				C2D3BC2C1DD8739900026AD9 /* LoginViewController.swift in Sources */,
+				C2D3BC1E1DD8739900026AD9 /* AuthResponse.swift in Sources */,
+				C2D3BC281DD8739900026AD9 /* LoginModel.swift in Sources */,
+				C2D3BC241DD8739900026AD9 /* OAuthHandler.swift in Sources */,
+				C2D3BC211DD8739900026AD9 /* Defaults.swift in Sources */,
+				C2D3BC261DD8739900026AD9 /* AccountManager.swift in Sources */,
+				C2D3BC231DD8739900026AD9 /* ModelsAssembly.swift in Sources */,
+				C2D3BC1F1DD8739900026AD9 /* TokenResponse.swift in Sources */,
+				C2D3BC271DD8739900026AD9 /* KinopubAccount.swift in Sources */,
+				C2D3BC1B1DD8739900026AD9 /* AppDelegate.swift in Sources */,
+				C2D3BC2B1DD8739900026AD9 /* LeftMenuViewController.swift in Sources */,
+				C2D3BC291DD8739900026AD9 /* AccountNetworkingService.swift in Sources */,
+				C2D3BC2D1DD8739900026AD9 /* SplitViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2D3BC011DD8739900026AD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2D3BC021DD8739900026AD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C259D1831DD1EFD000228FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		C259D1841DD1EFD000228FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C259D1861DD1EFD000228FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA82EB034B96DAA7C0260FE /* Pods-Kinopub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pub.kino.client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C259D1871DD1EFD000228FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DAC9E0E08B1139F38A89AE /* Pods-Kinopub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pub.kino.client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C259D1711DD1EFD000228FED /* Build configuration list for PBXProject "Kinopub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C259D1831DD1EFD000228FED /* Debug */,
+				C259D1841DD1EFD000228FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C259D1851DD1EFD000228FED /* Build configuration list for PBXNativeTarget "Kinopub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C259D1861DD1EFD000228FED /* Debug */,
+				C259D1871DD1EFD000228FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C259D16E1DD1EFD000228FED /* Project object */;
+}
