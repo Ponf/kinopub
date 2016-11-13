@@ -20,9 +20,11 @@ class RequestFactory {
     var authorizedSessionManager: SessionManager?
 
     init () {
+        //Important: if you want to move/rename file please don't forget to update .gitignore
         let path = Bundle.main.path(forResource: "APIKeys", ofType: "plist")
-        let keys = NSDictionary(contentsOfFile: path!) as! [String : String]
-        clientSecret = keys["KinopubSecret"]!
+        let keys = NSDictionary(contentsOfFile: path!) as? [String : String]
+        assert(keys != nil, "Please add KinopubSecret in APIKeys.plist")
+        clientSecret = keys!["KinopubSecret"]!
     }
     
     
