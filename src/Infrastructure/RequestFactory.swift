@@ -14,18 +14,24 @@ class RequestFactory {
     
     //TODO: move secrets to Info.plist
     let clientId = "appletv2"
-    let clientSecret = ""
+    let clientSecret: String
     
     var accountManager: AccountManager?
     var authorizedSessionManager: SessionManager?
 
-
+    init () {
+        let path = Bundle.main.path(forResource: "APIKeys", ofType: "plist")
+        let keys = NSDictionary(contentsOfFile: path!) as! [String : String]
+        clientSecret = keys["KinopubSecret"]!
+    }
+    
+    
     func receiveDeviceCodeRequest() -> DataRequest {
         let parameters = [
             "grant_type": "device_code",
             "client_id": clientId,
             "client_secret": clientSecret
-        ]
+        ] as [String : String]
         let requestUrl = baseAPIURL + "oauth2/device"
         return Alamofire.request(requestUrl, method: .post, parameters: parameters, encoding:URLEncoding.httpBody)
     }
@@ -69,6 +75,7 @@ class RequestFactory {
         authorizedSessionManager = sessionManager
         return authorizedSessionManager!
     }
+    
 }
 
 extension RequestFactory: OAuthHandlerDelegate {

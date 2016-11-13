@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15A056E07DC533E5EB49A5E6 /* Pods_Kinopub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7C0164B63B05CD27BE96F5 /* Pods_Kinopub.framework */; };
+		C28D77381DD8819D001266FC /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C28D77371DD8819D001266FC /* APIKeys.plist */; };
 		C2D3BC1B1DD8739900026AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BBFF1DD8739900026AD9 /* AppDelegate.swift */; };
 		C2D3BC1C1DD8739900026AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D3BC001DD8739900026AD9 /* Assets.xcassets */; };
 		C2D3BC1D1DD8739900026AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D3BC011DD8739900026AD9 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		22DAC9E0E08B1139F38A89AE /* Pods-Kinopub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinopub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kinopub/Pods-Kinopub.release.xcconfig"; sourceTree = "<group>"; };
 		C259D1761DD1EFD000228FED /* Kinopub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kinopub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28D77371DD8819D001266FC /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		C2D3BBFF1DD8739900026AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2D3BC001DD8739900026AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2D3BC021DD8739900026AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				C2D3BC121DD8739900026AD9 /* Services */,
 				C2D3BC161DD8739900026AD9 /* ViewControllers */,
 				C2D3BC1A1DD8739900026AD9 /* Views */,
+				C28D77371DD8819D001266FC /* APIKeys.plist */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2D3BC1C1DD8739900026AD9 /* Assets.xcassets in Resources */,
+				C28D77381DD8819D001266FC /* APIKeys.plist in Resources */,
 				C2D3BC1D1DD8739900026AD9 /* Main.storyboard in Resources */,
 				C2D3BC201DD8739900026AD9 /* Info.plist in Resources */,
 			);
