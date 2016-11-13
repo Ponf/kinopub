@@ -14,7 +14,7 @@ class RequestFactory {
     
     //TODO: move secrets to Info.plist
     let clientId = "appletv2"
-    let clientSecret = "***REMOVED***"
+    let clientSecret = ""
     
     var accountManager: AccountManager?
     var authorizedSessionManager: SessionManager?
