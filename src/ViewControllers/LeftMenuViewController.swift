@@ -13,6 +13,16 @@ protocol LeftMenuViewControllerDelegate: class {
 class LeftMenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView?
     weak var delegate: LeftMenuViewControllerDelegate?
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        self.setNeedsFocusUpdate()
+//        self.updateFocusIfNeeded()
+//    }
+//    
+//    override var preferredFocusEnvironments: [UIFocusEnvironment] {
+//        return [tableView!];
+//    }
 }
 
 //MARK - UITableViewDataSource

@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		15A056E07DC533E5EB49A5E6 /* Pods_Kinopub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7C0164B63B05CD27BE96F5 /* Pods_Kinopub.framework */; };
+		B408A05A5F7F9933EA4BC54C /* VideoGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A9701F61D4512BA74C1D /* VideoGenre.swift */; };
+		B408A1136345269E931A5CBC /* VideoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AAA1B75A25F785E7F4C2 /* VideoItemCell.swift */; };
+		B408A42AFFBA0BABE6850F90 /* VideosNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AB88800D6EE41C51BEA8 /* VideosNetworkingService.swift */; };
+		B408A464A3457CBD3053F9BA /* VideoItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A2A8CA6FCF6DE93A6710 /* VideoItemsViewController.swift */; };
+		B408AB21CA8804A97E5823B1 /* VideoPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408AFC7B7A90C139F00C2A5 /* VideoPoster.swift */; };
+		B408ACA5684767FC8FD49C8D /* VideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A604AF9AF9B766EAD8D9 /* VideoItem.swift */; };
+		B408AD3E6867061CB9F47A23 /* VideoItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408A952B1944ADFB60B672D /* VideoItemsModel.swift */; };
 		C28D77381DD8819D001266FC /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C28D77371DD8819D001266FC /* APIKeys.plist */; };
 		C2D3BC1B1DD8739900026AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BBFF1DD8739900026AD9 /* AppDelegate.swift */; };
 		C2D3BC1C1DD8739900026AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D3BC001DD8739900026AD9 /* Assets.xcassets */; };
 		C2D3BC1D1DD8739900026AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D3BC011DD8739900026AD9 /* Main.storyboard */; };
 		C2D3BC1E1DD8739900026AD9 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC041DD8739900026AD9 /* AuthResponse.swift */; };
 		C2D3BC1F1DD8739900026AD9 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC051DD8739900026AD9 /* TokenResponse.swift */; };
-		C2D3BC201DD8739900026AD9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2D3BC061DD8739900026AD9 /* Info.plist */; };
 		C2D3BC211DD8739900026AD9 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC081DD8739900026AD9 /* Defaults.swift */; };
 		C2D3BC221DD8739900026AD9 /* DelegatesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC091DD8739900026AD9 /* DelegatesStorage.swift */; };
 		C2D3BC231DD8739900026AD9 /* ModelsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3BC0A1DD8739900026AD9 /* ModelsAssembly.swift */; };
@@ -32,6 +38,13 @@
 
 /* Begin PBXFileReference section */
 		22DAC9E0E08B1139F38A89AE /* Pods-Kinopub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinopub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kinopub/Pods-Kinopub.release.xcconfig"; sourceTree = "<group>"; };
+		B408A2A8CA6FCF6DE93A6710 /* VideoItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoItemsViewController.swift; sourceTree = "<group>"; };
+		B408A604AF9AF9B766EAD8D9 /* VideoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoItem.swift; sourceTree = "<group>"; };
+		B408A952B1944ADFB60B672D /* VideoItemsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoItemsModel.swift; sourceTree = "<group>"; };
+		B408A9701F61D4512BA74C1D /* VideoGenre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoGenre.swift; sourceTree = "<group>"; };
+		B408AAA1B75A25F785E7F4C2 /* VideoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoItemCell.swift; sourceTree = "<group>"; };
+		B408AB88800D6EE41C51BEA8 /* VideosNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosNetworkingService.swift; sourceTree = "<group>"; };
+		B408AFC7B7A90C139F00C2A5 /* VideoPoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPoster.swift; sourceTree = "<group>"; };
 		C259D1761DD1EFD000228FED /* Kinopub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kinopub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28D77371DD8819D001266FC /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		C2D3BBFF1DD8739900026AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +132,9 @@
 			children = (
 				C2D3BC041DD8739900026AD9 /* AuthResponse.swift */,
 				C2D3BC051DD8739900026AD9 /* TokenResponse.swift */,
+				B408A604AF9AF9B766EAD8D9 /* VideoItem.swift */,
+				B408A9701F61D4512BA74C1D /* VideoGenre.swift */,
+				B408AFC7B7A90C139F00C2A5 /* VideoPoster.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -149,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				C2D3BC111DD8739900026AD9 /* LoginModel.swift */,
+				B408A952B1944ADFB60B672D /* VideoItemsModel.swift */,
 			);
 			path = ViewControllerModels;
 			sourceTree = "<group>";
@@ -166,6 +183,7 @@
 			children = (
 				C2D3BC141DD8739900026AD9 /* AccountNetworkingService.swift */,
 				C2D3BC151DD8739900026AD9 /* LoginNetworkingService.swift */,
+				B408AB88800D6EE41C51BEA8 /* VideosNetworkingService.swift */,
 			);
 			path = NetworkingServices;
 			sourceTree = "<group>";
@@ -176,6 +194,7 @@
 				C2D3BC171DD8739900026AD9 /* LeftMenuViewController.swift */,
 				C2D3BC181DD8739900026AD9 /* LoginViewController.swift */,
 				C2D3BC191DD8739900026AD9 /* SplitViewController.swift */,
+				B408A2A8CA6FCF6DE93A6710 /* VideoItemsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,6 +202,7 @@
 		C2D3BC1A1DD8739900026AD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B408AAA1B75A25F785E7F4C2 /* VideoItemCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,7 +245,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = babystep.tv;
 				TargetAttributes = {
 					C259D1751DD1EFD000228FED = {
@@ -260,7 +280,6 @@
 				C2D3BC1C1DD8739900026AD9 /* Assets.xcassets in Resources */,
 				C28D77381DD8819D001266FC /* APIKeys.plist in Resources */,
 				C2D3BC1D1DD8739900026AD9 /* Main.storyboard in Resources */,
-				C2D3BC201DD8739900026AD9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +354,13 @@
 				C2D3BC2B1DD8739900026AD9 /* LeftMenuViewController.swift in Sources */,
 				C2D3BC291DD8739900026AD9 /* AccountNetworkingService.swift in Sources */,
 				C2D3BC2D1DD8739900026AD9 /* SplitViewController.swift in Sources */,
+				B408A464A3457CBD3053F9BA /* VideoItemsViewController.swift in Sources */,
+				B408AD3E6867061CB9F47A23 /* VideoItemsModel.swift in Sources */,
+				B408A42AFFBA0BABE6850F90 /* VideosNetworkingService.swift in Sources */,
+				B408ACA5684767FC8FD49C8D /* VideoItem.swift in Sources */,
+				B408A05A5F7F9933EA4BC54C /* VideoGenre.swift in Sources */,
+				B408AB21CA8804A97E5823B1 /* VideoPoster.swift in Sources */,
+				B408A1136345269E931A5CBC /* VideoItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +396,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -419,6 +446,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -447,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAA82EB034B96DAA7C0260FE /* Pods-Kinopub.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
@@ -461,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22DAC9E0E08B1139F38A89AE /* Pods-Kinopub.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";

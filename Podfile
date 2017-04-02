@@ -8,4 +8,5 @@ target 'Kinopub' do
   pod 'Alamofire', '~> 4.0'
   pod 'AlamofireObjectMapper'
   pod 'AlamofireNetworkActivityLogger'
+  pod 'AlamofireImage'
 end

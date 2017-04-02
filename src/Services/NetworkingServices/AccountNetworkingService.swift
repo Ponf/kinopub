@@ -8,7 +8,7 @@ import Alamofire
 import ObjectMapper
 
 class AccountNetworkingService {
-    var requestFactory: RequestFactory
+    let requestFactory: RequestFactory
 
     init(requestFactory: RequestFactory) {
         self.requestFactory = requestFactory
@@ -25,17 +25,6 @@ class AccountNetworkingService {
                 }
         }
     }
-//
-//    func renewAccessToken(with refreshToken: String, completed: @escaping (_ responseObject: TokenResponse?, _ error: Error?) -> ()) {
-//        requestFactory.renewAccessTokenRequest(with: refreshToken).validate()
-//                .responseObject { (response: DataResponse<TokenResponse>) in
-//                    switch response.result {
-//                    case .success:
-//                        completed(response.result.value, nil)
-//                        break
-//                    default:
-//                        break
-//                    }
-//                }
-//    }
+
+    
 }

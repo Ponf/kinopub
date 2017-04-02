@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Video Items View Controller-->
         <scene sceneID="FOm-ra-lgg">
             <objects>
-                <viewController id="4vf-QG-R8w" sceneMemberID="viewController">
+                <viewController id="4vf-QG-R8w" customClass="VideoItemsViewController" customModule="Kinopub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0id-ke-cgY"/>
                         <viewControllerLayoutGuide type="bottom" id="tdc-BS-ujM"/>
@@ -21,18 +21,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvi-rC-b6V">
-                                <rect key="frame" x="601" y="520" width="82" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="niX-QS-sov">
+                                <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0G0-Tw-dr9">
+                                    <size key="itemSize" width="320" height="560"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="80" minY="80" maxX="80" maxY="80"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoItemCellReuseIdentifier" id="saA-Hi-EpA" customClass="VideoItemCell" customModule="Kinopub" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="80" width="320" height="560"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="560"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPv-U9-ain">
+                                                    <rect key="frame" x="10" y="480" width="300" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NrF-zd-xSs">
+                                                    <rect key="frame" x="10" y="10" width="300" height="450"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="450" id="JYl-3b-rKf"/>
+                                                        <constraint firstAttribute="width" constant="300" id="mQf-ng-eYd"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="bPv-U9-ain" firstAttribute="top" secondItem="NrF-zd-xSs" secondAttribute="bottom" constant="20" id="B0v-j2-1zg"/>
+                                            <constraint firstItem="NrF-zd-xSs" firstAttribute="centerX" secondItem="saA-Hi-EpA" secondAttribute="centerX" id="EN9-OO-Tq6"/>
+                                            <constraint firstItem="NrF-zd-xSs" firstAttribute="top" secondItem="saA-Hi-EpA" secondAttribute="top" constant="10" id="Vk6-8O-fmb"/>
+                                            <constraint firstItem="bPv-U9-ain" firstAttribute="centerX" secondItem="saA-Hi-EpA" secondAttribute="centerX" id="bL5-jW-laL"/>
+                                            <constraint firstItem="bPv-U9-ain" firstAttribute="leading" secondItem="saA-Hi-EpA" secondAttribute="leading" constant="10" id="bZm-OJ-hXg"/>
+                                            <constraint firstAttribute="trailing" secondItem="bPv-U9-ain" secondAttribute="trailing" constant="10" id="rs7-Xb-mmh"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="posterView" destination="NrF-zd-xSs" id="riP-Dl-rAL"/>
+                                            <outlet property="titleView" destination="bPv-U9-ain" id="RyR-XO-FWg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="4vf-QG-R8w" id="hTD-2I-GCk"/>
+                                    <outlet property="delegate" destination="4vf-QG-R8w" id="VrR-9X-WMR"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Xvi-rC-b6V" firstAttribute="centerY" secondItem="kan-dm-P5Z" secondAttribute="centerY" id="Zw7-s9-LPN"/>
-                            <constraint firstItem="Xvi-rC-b6V" firstAttribute="centerX" secondItem="kan-dm-P5Z" secondAttribute="centerX" id="lWv-SG-Ian"/>
+                            <constraint firstAttribute="trailing" secondItem="niX-QS-sov" secondAttribute="trailing" id="Hwj-mW-F6F"/>
+                            <constraint firstItem="niX-QS-sov" firstAttribute="leading" secondItem="kan-dm-P5Z" secondAttribute="leading" id="WOS-Yq-3Hm"/>
+                            <constraint firstItem="niX-QS-sov" firstAttribute="top" secondItem="0id-ke-cgY" secondAttribute="bottom" id="goO-vf-D4x"/>
+                            <constraint firstItem="tdc-BS-ujM" firstAttribute="top" secondItem="niX-QS-sov" secondAttribute="bottom" id="yd1-YX-iwe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="niX-QS-sov" id="Clp-rc-om7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lad-MF-hqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +92,7 @@
         <!--Left Menu View Controller-->
         <scene sceneID="xn0-ho-DX4">
             <objects>
-                <viewController id="tKg-cn-nV0" customClass="LeftMenuViewController" customModule="swift_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tKg-cn-nV0" customClass="LeftMenuViewController" customModule="Kinopub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z2c-Lk-qfh"/>
                         <viewControllerLayoutGuide type="bottom" id="b3C-qt-rzZ"/>
@@ -121,7 +172,7 @@
         <!--Login View Controller-->
         <scene sceneID="tBD-bD-24T">
             <objects>
-                <viewController id="hhc-a0-oVB" customClass="LoginViewController" customModule="swift_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hhc-a0-oVB" customClass="LoginViewController" customModule="Kinopub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UgO-a5-ADk"/>
                         <viewControllerLayoutGuide type="bottom" id="Llv-dJ-D5M"/>
@@ -210,7 +261,7 @@
         <!--Split View Controller-->
         <scene sceneID="y4z-E8-TN9">
             <objects>
-                <splitViewController id="eo8-cG-0h3" customClass="SplitViewController" customModule="swift_test" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="eo8-cG-0h3" customClass="SplitViewController" customModule="Kinopub" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="4vf-QG-R8w" kind="relationship" relationship="detailViewController" id="T0z-sC-MR2"/>
                         <segue destination="tKg-cn-nV0" kind="relationship" relationship="masterViewController" id="5bL-WQ-OBj"/>

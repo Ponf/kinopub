@@ -12,7 +12,6 @@ class RequestFactory {
     }
     let baseAPIURL = "https://api.service-kp.com/"
     
-    //TODO: move secrets to Info.plist
     let clientId = "appletv2"
     let clientSecret: String
     
@@ -60,6 +59,19 @@ class RequestFactory {
         return sessionManager().request(requestUrl, method: .post, parameters: parameters, encoding: URLEncoding.httpBody)
     }
 
+
+    //MARK - Videos
+    func loadVideosRequest(onPage page: Int) -> DataRequest {
+        let parameters = [
+            "type": "video",
+            "page": String(page),
+            "perpage": String(50)
+        ] as [String : String]
+
+        let requestUrl = baseAPIURL + "v1/items"
+        
+        return sessionManager().request(requestUrl, method: .get, parameters: parameters)
+    }
 
     
     private func sessionManager() -> SessionManager {

@@ -43,6 +43,10 @@ class SplitViewController: UISplitViewController {
             }
         }
     }
+    
+    override var preferredFocusEnvironments: [UIFocusEnvironment] {
+        return [self.viewControllers.first!]
+    }
 
     fileprivate func hideMenuAnimated() {
         UIView.animate(withDuration: 0.3) {
@@ -60,7 +64,17 @@ extension SplitViewController: UISplitViewControllerDelegate {
         if svc.displayMode == .primaryHidden {
             return .primaryOverlay
         }
+        self.setNeedsFocusUpdate()
+        self.updateFocusIfNeeded()
         return .primaryHidden
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, show vc: UIViewController, sender: Any?) -> Bool {
+        return true
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
+        return true
     }
 }
 
